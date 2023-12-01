@@ -12,7 +12,7 @@
 </head>
 <body onload="onYoutubeFrameApiReady()">
 
-    <header class="">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">MashUp Híbrida</a>
@@ -22,25 +22,13 @@
                 <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#costosGasolina">Costos Gasolina</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link" href="#convertirMonedas">Convertidor Monedas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#videoAleatorio">Video aleatorio</a>
                         </li>
                     </ul>
                 </div>
@@ -144,7 +132,7 @@
 
 
     <form runat="server" class="text-center">
-        <div class="container text-center">
+        <div id="costosGasolina" class="container text-center">
             <h1>Visualizar costos de gasolina</h1>
             <div class="mb-3">
                 <label for="labelCiudad" class="form-label">Ciudad:</label>
@@ -245,11 +233,11 @@
         </div>
     </form>
 
-    <div class="container text-center mt-4">
+    <div class="container text-center mt-4" id="convertirMonedas">
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalConvertirMonedas">Convertidor de Monedas</button>
     </div>
 
-    <div class="container text-center mt-4">
+    <div id="videoAleatorio" class="container text-center mt-4">
         <div id="player"></div>
     </div>
 
@@ -269,5 +257,18 @@
         </div>
     </div>
 
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 MashuUp. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <p>Desarrollado por: Equipo MashUp ®</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
